@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#dcd6d7">
+
+        <!-- Card 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            android:background="@color/white"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            android:padding="6dp">
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@color/black"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/txt1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/image1"
+                    android:text="Hellom"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/txt2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt1_1"
+                    android:layout_toRightOf="@id/image1"
+                    android:text="Hello" />
+
+                <LinearLayout
+                    android:id="@+id/buttonLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnMinus1"
+                            android:layout_width="55dp"
+                            android:layout_height="40dp"
+                            android:textSize="16sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="8dp"
+                            android:backgroundTint="#ff0f0f"
+                            android:text="-" />
+
+                        <Button
+                            android:id="@+id/btnPlus1"
+                            android:layout_width="55dp"
+                            android:layout_height="40dp"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:paddingRight="20dp"
+                            android:backgroundTint="#4BB543"
+                            android:text="+"
+                            android:layout_marginEnd="20dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/quantityCounter1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:text="0 pcs"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            android:background="@color/white"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            android:padding="6dp">
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@color/black"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/txt1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/image2"
+                    android:text="Hellom"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/txt2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt1_2"
+                    android:layout_toRightOf="@id/image2"
+                    android:text="Hello" />
+
+                <LinearLayout
+                    android:id="@+id/buttonLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnMinus2"
+                            android:layout_width="55dp"
+                            android:layout_height="40dp"
+                            android:textSize="16sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="8dp"
+                            android:backgroundTint="#ff0f0f"
+                            android:text="-" />
+
+                        <Button
+                            android:id="@+id/btnPlus2"
+                            android:layout_width="55dp"
+                            android:layout_height="40dp"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:paddingRight="20dp"
+                            android:backgroundTint="#4BB543"
+                            android:text="+"
+                            android:layout_marginEnd="20dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/quantityCounter2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:text="0 pcs"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 3 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            android:background="@color/white"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            android:padding="6dp">
+
+            <RelativeLayout
+                android:id="@+id/relative3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@color/black"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/txt1_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/image3"
+                    android:text="Hellom"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/txt2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt1_3"
+                    android:layout_toRightOf="@id/image3"
+                    android:text="Hello" />
+
+                <LinearLayout
+                    android:id="@+id/buttonLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnMinus3"
+                            android:layout_width="55dp"
+                            android:layout_height="40dp"
+                            android:textSize="16sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="8dp"
+                            android:backgroundTint="#ff0f0f"
+                            android:text="-" />
+
+                        <Button
+                            android:id="@+id/btnPlus3"
+                            android:layout_width="55dp"
+                            android:layout_height="40dp"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:paddingRight="20dp"
+                            android:backgroundTint="#4BB543"
+                            android:text="+"
+                            android:layout_marginEnd="20dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/quantityCounter3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:text="0 pcs"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 4 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            android:background="@color/white"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            android:padding="6dp">
+
+            <RelativeLayout
+                android:id="@+id/relative4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image4"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@color/black"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/txt1_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/image4"
+                    android:text="Hellom"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/txt2_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt1_4"
+                    android:layout_toRightOf="@id/image4"
+                    android:text="Hello" />
+
+                <LinearLayout
+                    android:id="@+id/buttonLayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnMinus4"
+                            android:layout_width="55dp"
+                            android:layout_height="40dp"
+                            android:textSize="16sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="8dp"
+                            android:backgroundTint="#ff0f0f"
+                            android:text="-" />
+
+                        <Button
+                            android:id="@+id/btnPlus4"
+                            android:layout_width="55dp"
+                            android:layout_height="40dp"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:paddingRight="20dp"
+                            android:backgroundTint="#4BB543"
+                            android:text="+"
+                            android:layout_marginEnd="20dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/quantityCounter4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:text="0 pcs"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 5 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            android:background="@color/white"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            android:padding="6dp">
+
+            <RelativeLayout
+                android:id="@+id/relative5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image5"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@color/black"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/txt1_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/image5"
+                    android:text="Hellom"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/txt2_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt1_5"
+                    android:layout_toRightOf="@id/image5"
+                    android:text="Hello" />
+
+                <LinearLayout
+                    android:id="@+id/buttonLayout5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnMinus5"
+                            android:layout_width="55dp"
+                            android:layout_height="40dp"
+                            android:textSize="16sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="8dp"
+                            android:backgroundTint="#ff0f0f"
+                            android:text="-" />
+
+                        <Button
+                            android:id="@+id/btnPlus5"
+                            android:layout_width="55dp"
+                            android:layout_height="40dp"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:paddingRight="20dp"
+                            android:backgroundTint="#4BB543"
+                            android:text="+"
+                            android:layout_marginEnd="20dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/quantityCounter5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:text="0 pcs"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 6 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            android:background="@color/white"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            android:padding="6dp">
+
+            <RelativeLayout
+                android:id="@+id/relative6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image6"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@color/black"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/txt1_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/image6"
+                    android:text="Hellom"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/txt2_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt1_6"
+                    android:layout_toRightOf="@id/image6"
+                    android:text="Hello" />
+
+                <LinearLayout
+                    android:id="@+id/buttonLayout6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnMinus6"
+                            android:layout_width="55dp"
+                            android:layout_height="40dp"
+                            android:textSize="16sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="8dp"
+                            android:backgroundTint="#ff0f0f"
+                            android:text="-" />
+
+                        <Button
+                            android:id="@+id/btnPlus6"
+                            android:layout_width="55dp"
+                            android:layout_height="40dp"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:paddingRight="20dp"
+                            android:backgroundTint="#4BB543"
+                            android:text="+"
+                            android:layout_marginEnd="20dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/quantityCounter6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:text="0 pcs"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 7 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            android:background="@color/white"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            android:padding="6dp">
+
+            <RelativeLayout
+                android:id="@+id/relative7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image7"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@color/black"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/txt1_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/image7"
+                    android:text="Hellom"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/txt2_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt1_7"
+                    android:layout_toRightOf="@id/image7"
+                    android:text="Hello" />
+
+                <LinearLayout
+                    android:id="@+id/buttonLayout7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnMinus7"
+                            android:layout_width="55dp"
+                            android:layout_height="40dp"
+                            android:textSize="16sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="8dp"
+                            android:backgroundTint="#ff0f0f"
+                            android:text="-" />
+
+                        <Button
+                            android:id="@+id/btnPlus7"
+                            android:layout_width="55dp"
+                            android:layout_height="40dp"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:paddingRight="20dp"
+                            android:backgroundTint="#4BB543"
+                            android:text="+"
+                            android:layout_marginEnd="20dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/quantityCounter7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:text="0 pcs"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 8 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            android:background="@color/white"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            android:padding="6dp">
+
+            <RelativeLayout
+                android:id="@+id/relative8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image8"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@color/black"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/txt1_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/image8"
+                    android:text="Hellom"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/txt2_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt1_8"
+                    android:layout_toRightOf="@id/image8"
+                    android:text="Hello" />
+
+                <LinearLayout
+                    android:id="@+id/buttonLayout8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnMinus8"
+                            android:layout_width="55dp"
+                            android:layout_height="40dp"
+                            android:textSize="16sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="8dp"
+                            android:backgroundTint="#ff0f0f"
+                            android:text="-" />
+
+                        <Button
+                            android:id="@+id/btnPlus8"
+                            android:layout_width="55dp"
+                            android:layout_height="40dp"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:paddingRight="20dp"
+                            android:backgroundTint="#4BB543"
+                            android:text="+"
+                            android:layout_marginEnd="20dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/quantityCounter8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:text="0 pcs"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            android:background="@color/white"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            android:padding="6dp">
+
+            <RelativeLayout
+                android:id="@+id/relative9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image9"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@color/black"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/txt1_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/image9"
+                    android:text="Hellom"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/txt2_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt1_9"
+                    android:layout_toRightOf="@id/image9"
+                    android:text="Hello" />
+
+                <LinearLayout
+                    android:id="@+id/buttonLayout9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnMinus9"
+                            android:layout_width="55dp"
+                            android:layout_height="40dp"
+                            android:textSize="16sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="8dp"
+                            android:backgroundTint="#ff0f0f"
+                            android:text="-" />
+
+                        <Button
+                            android:id="@+id/btnPlus9"
+                            android:layout_width="55dp"
+                            android:layout_height="40dp"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:paddingRight="20dp"
+                            android:backgroundTint="#4BB543"
+                            android:text="+"
+                            android:layout_marginEnd="20dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/quantityCounter9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:text="0 pcs"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
